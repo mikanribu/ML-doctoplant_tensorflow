@@ -19,7 +19,8 @@ Dataset from Kaggle - https://www.kaggle.com/vipoooool/new-plant-diseases-datase
 - Dataset balanced
 - Leave on an uniform background
 
-Code > 01-cnn_tensorflow_doctoplant_dataset1.ipynb
+Code 
+> - 01-cnn_tensorflow_doctoplant_dataset1.ipynb
 
 
 ### Iteration 2 / 2-bis
@@ -36,8 +37,8 @@ Adding on top:
 - Update final layer - 39 classes
 
 Code:
-> 02-cnn_tensorflow_doctoplant_data_augmented_fix_bckgrnd.ipynb
-> 02bis-cnn_tensorflow_doctoplant_random_bckg.ipynb
+> - 02-cnn_tensorflow_doctoplant_data_augmented_fix_bckgrnd.ipynb
+> - 02bis-cnn_tensorflow_doctoplant_random_bckg.ipynb
 
 
 ### Iteration 3
@@ -65,7 +66,8 @@ New CNN model:
 - 1 Dense layer with Sigmoid activation - object_proba (1 neuron)
 - Concatenation > plant_classification + object_proba
 
-Code > 03-cnn_tensorflow_doctoplant_sigmoid.ipynb
+Code 
+> - 03-cnn_tensorflow_doctoplant_sigmoid.ipynb
 
 **Training configuration**:
 - Use of Adam optimizer.
@@ -73,3 +75,8 @@ Code > 03-cnn_tensorflow_doctoplant_sigmoid.ipynb
 - Use of Categorical Crossentropy loss function (for iteration 1&2).
 - Monitor model with the Accuracy metric.
 
+Datasets can be found here - https://drive.google.com/drive/folders/1Uaqnt1VbbrrZpxlPv1g9S4kiY6b_18Yn?usp=sharing
+- dataset_test_v3 > The web scrapped Test dataset
+- bckgrnd_fix_iter2 > Background image for iteration 2 (one per category of plant)
+- bckgrnd_img_iter2bis > Background image for iteration 2 bis (random)
+- plantvillage_dataset_augmented_fixed > our latest training dataset (including data augmentation)
